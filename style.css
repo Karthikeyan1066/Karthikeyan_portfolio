@@ -361,8 +361,9 @@ section .button button:hover {
 }
 
 .skills-details .boxes .per {
-  font-size: 60px;
+  font-size: clamp(24px, 4.5vw, 36px);
   color: #4070f4;
+  line-height: 1.2;
 }
 
 /* My Services CSS */
@@ -585,6 +586,8 @@ footer .text span a:hover {
     width: 100%;
   }
 
+  .skills-details .boxes .per { font-size: 28px; }
+
   /* Mobile enhancements */
   .home { background-image: url("Images/mobile_background.jpg"); background-attachment: scroll; background-position: center top; }
   .contact-details { flex-direction: column; gap: 16px; align-items: stretch; }
@@ -605,8 +608,7 @@ footer .text span a:hover {
   }
 
   .skills-details .boxes .per {
-    font-size: 50px;
-    color: #4070f4;
+    font-size: 24px;
   }
 }
 @media (max-width: 360px) {
